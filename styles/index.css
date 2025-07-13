@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+/* Header Background */
+.hero-section {
+  background: url('./banner.png') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #1a1a1a;
+}
+/* Navbar Section */
+.navbar-section {
+  padding: 20px 40px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  color: #5a59ff;
+  font-size: 20px;
+}
+.signup-btn {
+  background-color: #5a59ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* Banner Section */
+.banner-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.focus-btn {
+  background-color: #5a59ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+body {
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 20px 10%;
+}
+/* Header */
+header {
+  background-color: #5b3df2;
+  color: #fff;
+  padding: 20px 0;
+}
+header h1 {
+  margin: 0;
+}
+/* Main Section */
+main {
+  padding: 60px 10%;
+}
+/* Action Section */
+.action-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.action-content {
+  max-width: 500px;
+}
+.action-content h2 {
+  font-size: 32px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+.action-content p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+.action-content button {
+  background-color: #5b3df2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Image Style */
+.action-image img {
+  max-width: 450px;
+  border-radius: 20px;
+}
