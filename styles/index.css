@@ -116,3 +116,32 @@ main {
   max-width: 450px;
   border-radius: 20px;
 }
+.productive-users {
+  background-color: #eef0ff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.productive-users h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: #555;
+}
+
