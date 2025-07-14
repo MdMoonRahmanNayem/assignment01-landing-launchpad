@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 body, html {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f8ff;
   height: 100%;
+  color: #1a1a1a;
 }
-/* Header Background */
 .hero-section {
   background: url('./banner.png') no-repeat center center/cover;
   min-height: 100vh;
@@ -15,7 +16,6 @@ body, html {
   flex-direction: column;
   color: #1a1a1a;
 }
-/* Navbar Section */
 .navbar-section {
   padding: 20px 40px;
 }
@@ -35,12 +35,9 @@ body, html {
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: 500;
 }
-/* Banner Section */
 .banner-section {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,37 +54,20 @@ body, html {
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: 500;
 }
-body {
-  background-color: #f7f9fc;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  padding: 20px 10%;
-}
-/* Header */
-header {
-  background-color: #5b3df2;
-  color: #fff;
-  padding: 20px 0;
-}
-header h1 {
-  margin: 0;
-}
-/* Main Section */
 main {
-  padding: 60px 10%;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/* Action Section */
 .action-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  align-items: center;
+  gap: 40px;
+  padding: 0 80px; 
+  margin-bottom: 60px;
 }
 .action-content {
   max-width: 500px;
@@ -109,65 +89,56 @@ main {
   padding: 12px 24px;
   font-size: 14px;
   border-radius: 6px;
-  cursor: pointer;
 }
-/* Image Style */
+.action-content button:hover {
+  background-color: #4730b3;
+}
 .action-image img {
   max-width: 450px;
   border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 .productive-users {
   background-color: #eef0ff;
   padding: 50px 0;
   text-align: center;
+  margin-bottom: 60px;
 }
-
 .productive-users h2 {
   font-size: 28px;
   margin-bottom: 30px;
   color: #222;
 }
-
 .stats {
   display: flex;
   justify-content: center;
   gap: 60px;
 }
-
 .stat-item h3 {
   font-size: 36px;
   color: #4f46e5;
   margin-bottom: 10px;
 }
-
 .stat-item p {
   font-size: 16px;
   color: #555;
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f5f7ff;
-}
-
 .feedback-section {
   padding: 40px 0;
   text-align: center;
+  margin-bottom: 60px;
 }
-
 .section-title {
   font-size: 28px;
   color: #1e1e1e;
   margin-bottom: 30px;
 }
-
 .reviews-container {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
-
 .review-card {
   background-color: white;
   border-radius: 12px;
@@ -176,98 +147,77 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   text-align: left;
 }
-
 .stars {
   display: flex;
   gap: 4px;
   margin-bottom: 10px;
 }
-
 .stars img {
   width: 18px;
   height: 18px;
 }
-
 .review-card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
   color: #1e1e1e;
 }
-
 .review-card p {
   font-size: 14px;
   color: #555;
   margin: 5px 0;
 }
-
 .reviewer {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
-
 .reviewer img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .reviewer-name {
   font-size: 13px;
   font-weight: bold;
   margin: 0;
   color: #2c2c2c;
 }
-
 .review-date {
   font-size: 12px;
   color: #aaa;
   margin: 0;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f8ff;
-}
-
-main {
-  padding: 50px 20px;
-}
-
 .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto 80px auto;
   gap: 40px;
 }
-
 .left-section {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
 }
-
 .left-section h1 {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
+  color: #222;
 }
-
-.right-section {
-  flex: 1;
-}
-
 form {
   display: flex;
   flex-direction: column;
 }
-
 label {
   margin: 10px 0 5px;
   font-weight: 600;
+  color: #333;
 }
-
 input, textarea {
   padding: 12px;
   border: 1px solid #ccc;
@@ -275,13 +225,16 @@ input, textarea {
   font-size: 16px;
   margin-bottom: 10px;
   background-color: #fff;
+  transition: border-color 0.3s ease;
 }
-
+input:focus, textarea:focus {
+  border-color: #5a59ff;
+  outline: none;
+}
 textarea {
   resize: none;
   height: 100px;
 }
-
 button {
   padding: 12px;
   background-color: #4f46e5;
@@ -289,12 +242,34 @@ button {
   border: none;
   border-radius: 6px;
   font-size: 16px;
-  cursor: pointer;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: #3730a3;
 }
-
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9ff;
+}
+.footer h1 {
+  font-size: 48px;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+.footer p {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #888;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.footer-links a:hover {
+  color: #4f46e5;
+}
